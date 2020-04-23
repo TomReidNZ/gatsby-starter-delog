@@ -62,7 +62,11 @@ class AboutPage extends Component {
                 applications using Python (TensorFlow / Keras, PyTorch, ), R,
                 React.js, and ML.NET.
               </p>
-              <p>I've written popular online educational courses encompassing many different fields. I'm skilled in designing curriculums and explaining difficult</p>
+              <p>
+                I've written popular online educational courses encompassing
+                many different fields. I'm skilled in designing curriculums and
+                simple explanations for difficult concepts.
+              </p>
             </div>
           </div>
           {/* {featuredPostNode && (
