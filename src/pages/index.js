@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import { Container } from "react-bootstrap";
-
+import { Card } from "react-bootstrap";
 import Layout from "../layout";
 import SEO from "../components/SEO";
 import { getArticlesFromPostEdges } from "../utility/articles";
@@ -30,10 +30,62 @@ class Index extends React.Component {
       <Layout>
         <SEO pageMeta={pageMeta} />
         <ImageHero
-          title="Hi, I'm Tom! 👋"
-          subtitle="And you've found this as I'm working on it. I'll get around to polishing this up eventually, and putting my content on here, but I'm currently enjoying myself in South America :) For reference this site is made with Gatsby, and I'm an AI practitioner based out of Wellington, New Zealand. I am passionate about applying technology for social good, deep learning, and philosophy. I currently spend my work hours on machine learning, ethics, education, and business strategy."
+          title="A full-service technology agency specializing in Artificial Intelligence"
+          subtitle="We partner with clients to drive better business outcomes with best-in-class AI, communications, software development, and everything in between."
         />
         <Container className="main-page-body">
+        <ul className="post-list list-unstyled">
+          <li className="post-list__item" key="who-we-are">
+            <Card className="blog-card">
+              <Card.Body>
+                <div className="desktop-container">
+                <Card.Title>
+                  <h4>
+                      <div className="title-article">Who we are</div>
+                  </h4>
+                </Card.Title>
+                </div>
+                <div className="article-preview">We are a small team of high-end experts and enthusiastic intermediates.
+        We work with small companies to some of the largest companies in the
+        world.</div>
+              </Card.Body>
+            </Card>
+          </li>
+          <li className="post-list__item" key="what-we-do">
+            <Card className="blog-card">
+              <Card.Body>
+                <div className="desktop-container">
+                <Card.Title>
+                  <h4>
+                      <div className="title-article">What we do</div>
+                  </h4>
+                </Card.Title>
+                </div>
+                <div className="article-preview">End-to-end project delivery for AI, web, and cloud projects.
+        Development, data science, marketing, online education, and project
+        management. We offer support contracts to ensure everything keeps
+        working.</div>
+              </Card.Body>
+            </Card>
+          </li>
+          <li className="post-list__item" key="why-were-different">
+            <Card className="blog-card">
+              <Card.Body>
+                <div className="desktop-container">
+                <Card.Title>
+                  <h4>
+                      <div className="title-article">Why we're different</div>
+                  </h4>
+                </Card.Title>
+                </div>
+                <div className="article-preview">We are efficient remote contractors without the overheads, maximizing
+        value creation for organizations. We focus on making our clients
+        successful and long-term relationships. We can scale quickly, never ship
+        a substandard product, and we always deliver.</div>
+              </Card.Body>
+            </Card>
+          </li>
+      </ul>
           <div className="button-container">
           </div>
           <hr />

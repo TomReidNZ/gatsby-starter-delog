@@ -7,7 +7,8 @@ const ImageHero = ({ title, subtitle}) => (
     <Container>
       <Row>
       <Col xs="12" md="10">
-          <h1 className="hi-im-tom">{title}</h1>
+          <h1 className="hi-im-tom">A full-service technology agency</h1>
+          <h2 className="hi-im-tom">Artificial intelligence specialists</h2>
           <p className="hi-im-tom-description">{subtitle}</p>
         </Col>
       </Row>

@@ -1,12 +1,12 @@
 const config = {
-  siteTitle: "Tom Reid", // Site title.
-  siteTitleShort: "Tom Reid", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Tom Reid", // Alternative site title for SEO.
+  siteTitle: "AI Engineering Limited", // Site title.
+  siteTitleShort: "AI Eng Ltd", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "AI Engineering Ltd", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://tomreid.ai", // Domain of your website without pathPrefix.
+  siteUrl: "https://aiengineeringltd.com", // Domain of your website without pathPrefix.
   siteGithub: "https://github.com/tomreidnz/toms-gatsby-blog",
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "Tom Reid", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "AI specialists", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
   googleAnalyticsID: "UA-141660058-1", // GA tracking ID.
@@ -45,7 +45,7 @@ const config = {
     },
     {
       label: "Email",
-      url: "mailto:tom@tomreid.ai",
+      url: "mailto:tom@aiengineeringltd.com",
       iconClassName: "fa fa-envelope",
       image: "email"
     }
