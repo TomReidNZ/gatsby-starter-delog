@@ -12,8 +12,8 @@ import TopicList from "../components/TopicList";
 class Index extends React.Component {
   render() {
     const pageMeta = {
-      title: "Home",
-      description: "Lorem Ipsum",
+      title: "A full-service technology agency",
+      description: "Artificial intelligence specialists",
       cover: "https://spaceholder.cc/400x300",
       path: "/"
     };
