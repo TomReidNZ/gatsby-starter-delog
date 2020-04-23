@@ -1,76 +1,81 @@
 import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import PostLink from "../components/post-link";
-import HeroHeader from "../components/heroHeader";
+import { graphql, Link } from "gatsby";
+import { Container } from "react-bootstrap";
 
-const IndexPage = ({
-  data: {
-    site,
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const Posts = edges
-    .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+import Layout from "../layout";
+import SEO from "../components/SEO";
+import { getArticlesFromPostEdges } from "../utility/articles";
+import ArticleList from "../components/ArticleList";
+import ImageHero from "../components/ImageHero";
+import TopicList from "../components/TopicList";
 
-  return (
-    <Layout>
-      <Helmet>
-        <meta
-          name="w3l-domain-verification"
-          content="5ea0cfd50b5c6CF_Domain_verify"
+class Index extends React.Component {
+  render() {
+    const pageMeta = {
+      title: "Home",
+      description: "Lorem Ipsum",
+      cover: "https://spaceholder.cc/400x300",
+      path: "/"
+    };
+    const {
+      data: {
+        site: {
+          siteMetadata: { topics }
+        },
+        allMarkdownRemark: { edges: postEdges }
+      }
+    } = this.props;
+    const articles = getArticlesFromPostEdges(postEdges);
+    return (
+      <Layout>
+        <SEO pageMeta={pageMeta} />
+        <ImageHero
+          title="Hi, I'm Tom! 👋"
+          subtitle="And you've found this as I'm working on it. I'll get around to polishing this up eventually, and putting my content on here, but I'm currently enjoying myself in South America :) For reference this site is made with Gatsby, and I'm an AI practitioner based out of Wellington, New Zealand. I am passionate about applying technology for social good, deep learning, and philosophy. I currently spend my work hours on machine learning, ethics, education, and business strategy."
         />
-        <title>{site.siteMetadata.title}</title>
-        <meta name="description" content={site.siteMetadata.description} />
-        {/* {!site.siteMetadata.w3l_dom_key ? null : <meta name="w3l-domain-verification" content={site.siteMetadata.w3l_dom_key} />} */}
-      </Helmet>
-      <HeroHeader />
-      <h2>Who we are</h2>
-      <p>
-        We are a small team of high-end experts and enthusiastic intermediates.
-        We work with small companies to some of the largest companies in the
-        world.
-      </p>
-      <h2>What we do</h2>
-      <p>
-        End-to-end project delivery for AI, web, and cloud projects.
-        Development, data science, marketing, online education, and project
-        management. We offer support contracts to ensure everything keeps
-        working.
-      </p>
-      <h2>Why we're different</h2>
-      <p>
-        We are efficient remote contractors without the overheads, maximizing
-        value creation for organizations. We focus on making our clients
-        successful and long-term relationships. We can scale quickly, never ship
-        a substandard product, and we always deliver.
-      </p>
-    </Layout>
-  );
-};
+        <Container className="main-page-body">
+          <div className="button-container">
+          </div>
+          <hr />
+        </Container>
+      </Layout>
+    );
+  }
+}
 
-export default IndexPage;
+export default Index;
+
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query indexPageQuery {
+  query IndexQuery {
     site {
       siteMetadata {
-        title
-        description
-        w3l_dom_key
+        topics {
+          title
+          slug
+          description
+          cover
+        }
       }
     }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      limit: 3
+      sort: { fields: [fields___date], order: DESC }
+    ) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 250)
+          fields {
+            slug
+            date
+          }
+          excerpt(pruneLength: 580)
+          timeToRead
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
             title
-            thumbnail
+            tags
+            topics
+            cover
+            date
           }
         }
       }
