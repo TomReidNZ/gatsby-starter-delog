@@ -20,7 +20,7 @@ export default class MainLayout extends React.Component {
             <meta name="description" content={config.siteDescription} />
             <html lang="en" />
             <link
-              href="/static/fonts/fonts.css"
+              href="/fonts/fonts.css"
               rel="stylesheet"
             />
           </Helmet>
