@@ -38,15 +38,15 @@ module.exports = {
         path: `${__dirname}/content/`
       }
     },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        custom: {
-          families: ["Open Sans"],
-          urls: ["fonts/fonts.css"],
-        },
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-web-font-loader",
+    //   options: {
+    //     custom: {
+    //       families: ["Open Sans"],
+    //       urls: ["fonts/fonts.css"],
+    //     },
+    //   },
+    // },
     {
       resolve: "gatsby-transformer-remark",
       options: {

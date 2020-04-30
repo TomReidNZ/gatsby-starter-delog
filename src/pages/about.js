@@ -50,7 +50,7 @@ class AboutPage extends Component {
               <p>
                 I am a machine learning engineer and ethics specialist. With a
                 strong track record of ownership and execution in various
-                fields, I have helped delivered multi-million dollar projects
+                fields, I have helped deliver multi-million dollar projects
                 for some of the largest companies in the world. I am a founding
                 member of the Partnership on AI safety-critical expert group,
                 nominated by the AI Forum of New Zealand.
