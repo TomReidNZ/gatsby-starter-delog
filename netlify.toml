@@ -4,3 +4,9 @@
   
 [build.environment]
   NODE_VERSION = "10"
+
+[[redirects]]
+  from = "http://aiengineeringltd.com"
+  to = "https://aiengineeringltd.com"
+  status = 301
+  force = true
