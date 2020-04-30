@@ -80,7 +80,7 @@ class Index extends React.Component {
                 </div>
                 <div className="article-preview">We are efficient remote contractors without the overheads, maximizing
         value creation for organizations. We focus on making our clients
-        successful and long-term relationships. We can scale quickly, never ship
+        successful and building long-term relationships. We can scale quickly, never ship
         a substandard product, and we always deliver.</div>
               </Card.Body>
             </Card>
