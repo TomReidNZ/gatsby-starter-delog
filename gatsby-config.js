@@ -43,7 +43,7 @@ module.exports = {
       options: {
         custom: {
           families: ["Open Sans"],
-          urls: ["fonts.css"],
+          urls: ["fonts/fonts.css"],
         },
       },
     },
