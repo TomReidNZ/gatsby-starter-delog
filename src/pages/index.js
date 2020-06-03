@@ -29,67 +29,12 @@ class Index extends React.Component {
     return (
       <Layout>
         <SEO pageMeta={pageMeta} />
-        <ImageHero
-          title="A full-service technology agency specializing in Artificial Intelligence"
-          subtitle="We partner with clients to drive better business outcomes with best-in-class AI, communications, software development, and everything in between."
-        />
-        <Container className="main-page-body">
-        <ul className="post-list list-unstyled">
-          <li className="post-list__item" key="who-we-are">
-            <Card className="blog-card">
-              <Card.Body>
-                <div className="desktop-container">
-                <Card.Title>
-                  <h4>
-                      <div className="title-article">Who we are</div>
-                  </h4>
-                </Card.Title>
-                </div>
-                <div className="article-preview">We are a small team of high-end experts and enthusiastic intermediates.
-        We work with small companies to some of the largest companies in the
-        world.</div>
-              </Card.Body>
-            </Card>
-          </li>
-          <li className="post-list__item" key="what-we-do">
-            <Card className="blog-card">
-              <Card.Body>
-                <div className="desktop-container">
-                <Card.Title>
-                  <h4>
-                      <div className="title-article">What we do</div>
-                  </h4>
-                </Card.Title>
-                </div>
-                <div className="article-preview">End-to-end project delivery for AI, web, and cloud projects.
-        Development, data science, marketing, online education, and project
-        management. We offer support contracts to ensure everything keeps
-        working.</div>
-              </Card.Body>
-            </Card>
-          </li>
-          <li className="post-list__item" key="why-were-different">
-            <Card className="blog-card">
-              <Card.Body>
-                <div className="desktop-container">
-                <Card.Title>
-                  <h4>
-                      <div className="title-article">Why we're different</div>
-                  </h4>
-                </Card.Title>
-                </div>
-                <div className="article-preview">We are efficient remote contractors without the overheads, maximizing
-        value creation for organizations. We focus on making our clients
-        successful and building long-term relationships. We can scale quickly, never ship
-        a substandard product, and we always deliver.</div>
-              </Card.Body>
-            </Card>
-          </li>
-      </ul>
-          <div className="button-container">
+        {/* <Container className="main-page-body"> */}
+          <div className="section-1">
+            <img src={"./a.svg"}/>
+            <h1 className="title">Making better technology, together.</h1>
           </div>
-          <hr />
-        </Container>
+        {/* </Container> */}
       </Layout>
     );
   }
