@@ -45,7 +45,7 @@ class Index extends React.Component {
           <div className="section-content">
             You need a partner that's with you on the cutting edge, who
             understands what you're working on, and who can translate that
-            knowledge for any audience - from the C-suite down.
+            knowledge for any audience  -  from the C-suite down.
           </div>
         </div>
         <div className="section purple-section">
