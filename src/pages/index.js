@@ -45,19 +45,67 @@ class Index extends React.Component {
           <div className="section-content">
             You need a partner that's with you on the cutting edge, who
             understands what you're working on, and who can translate that
-            knowledge for any audience  -  from the C-suite down.
+            knowledge for any audience - from the C-suite down.
           </div>
         </div>
         <div className="section purple-section">
-        <div className="white-small-title">
-            <h5>BEST - IN - CLASS SERVICES</h5>
-          </div>
+          <div className="title-wrapper">
+            <h5 className="white-small-title">BEST - IN - CLASS SERVICES</h5>
           <div className="line" />
-          <ul className="services-list">
-      <li className="services-list-items" key="">
-        <img className="services-vector" src={"./a.svg"} />
-      </li>
-  </ul>         
+          </div>
+          <div className="services-list">
+            <div className="services-list-items" key="ai_and_ml">
+              <div className="image-wrapper">
+                <img
+                  className="services-vector"
+                  src={"./images/ai_and_ml.svg"}
+                />
+              </div>
+              <h5 className="service-title">AI AND ML</h5>
+            </div>
+            <div className="services-list-items" key="online_education">
+              <div className="image-wrapper">
+                <img
+                  className="services-vector"
+                  src={"./images/online_education.svg"}
+                />
+              </div>
+              <h5 className="service-title">ONLINE EDUCATION</h5>
+            </div>
+            <div className="services-list-items" key="responsible_ai">
+              <div className="image-wrapper">
+                <img
+                  className="services-vector"
+                  src={"./images/responsible_ai.svg"}
+                />
+              </div>
+              <h5 className="service-title">RESPONSIBLE AI</h5>
+            </div>
+            <div className="services-list-items" key="ai_and_ml">
+              <div className="image-wrapper">
+                <img className="services-vector" src={"./images/b.svg"} />
+              </div>
+              <h5 className="service-title">HEALTHCARE</h5>
+            </div>
+            <div className="services-list-items" key="strategy">
+              <div className="image-wrapper">
+                <img
+                  className="services-vector"
+                  src={"./images/strategy.svg"}
+                />
+              </div>
+              <h5 className="service-title">STRATEGY</h5>
+            </div>
+            <div className="services-list-items" key="software">
+              <div className="image-wrapper">
+                <img
+                  className="services-vector"
+                  src={"./images/software.svg"}
+                />
+              </div>
+              <h5 className="service-title">SOFTWARE</h5>
+            </div>
+          </div>
         </div>
         {/* </Container> */}
       </Layout>
