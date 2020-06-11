@@ -1,13 +1,8 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import { Container } from "react-bootstrap";
-import { Card } from "react-bootstrap";
 import Layout from "../layout";
 import SEO from "../components/SEO";
 import { getArticlesFromPostEdges } from "../utility/articles";
-import ArticleList from "../components/ArticleList";
-import ImageHero from "../components/ImageHero";
-import TopicList from "../components/TopicList";
 
 import "./index.scss";
 
@@ -27,7 +22,6 @@ class Index extends React.Component {
         allMarkdownRemark: { edges: postEdges },
       },
     } = this.props;
-    const articles = getArticlesFromPostEdges(postEdges);
     return (
       <Layout>
         <SEO pageMeta={pageMeta} />
@@ -51,62 +45,91 @@ class Index extends React.Component {
         <div className="section purple-section">
           <div className="title-wrapper">
             <h5 className="white-small-title">BEST - IN - CLASS SERVICES</h5>
-          <div className="line" />
+            <div className="line" />
           </div>
           <div className="services-list">
-            <div className="services-list-items" key="ai_and_ml">
-              <div className="image-wrapper">
-                <img
-                  className="services-vector"
-                  src={"./images/ai_and_ml.svg"}
-                />
+            <div className="services-list-left">
+              <div className="item-wrapper">
+                <div className="image-wrapper">
+                  <img
+                    className="services-vector"
+                    src={"./images/ai_and_ml.svg"}
+                  />
+                </div>
+                <h5 className="service-title-left">AI AND ML</h5>
               </div>
-              <h5 className="service-title">AI AND ML</h5>
             </div>
-            <div className="services-list-items" key="online_education">
-              <div className="image-wrapper">
-                <img
-                  className="services-vector"
-                  src={"./images/online_education.svg"}
-                />
+            <div className="services-list-items">
+              <div className="item-wrapper">
+                <div className="image-wrapper">
+                  <img
+                    className="services-vector"
+                    src={"./images/online_education.svg"}
+                  />
+                </div>
+                <h5 className="service-title">ONLINE EDUCATION</h5>
               </div>
-              <h5 className="service-title">ONLINE EDUCATION</h5>
             </div>
-            <div className="services-list-items" key="responsible_ai">
-              <div className="image-wrapper">
-                <img
-                  className="services-vector"
-                  src={"./images/responsible_ai.svg"}
-                />
+            <div className="services-list-right">
+              <div className="item-wrapper">
+                <div className="image-wrapper">
+                  <img
+                    className="services-vector"
+                    src={"./images/responsible_ai.svg"}
+                  />
+                </div>
+                <h5 className="service-title">RESPONSIBLE AI</h5>
               </div>
-              <h5 className="service-title">RESPONSIBLE AI</h5>
             </div>
-            <div className="services-list-items" key="ai_and_ml">
-              <div className="image-wrapper">
-                <img className="services-vector" src={"./images/b.svg"} />
-              </div>
-              <h5 className="service-title">HEALTHCARE</h5>
+            <div className="services-list-left">
+                <div className="image-wrapper">
+                  <img className="services-vector" src={"./images/b.svg"} />
+                </div>
+                <h5 className="service-title-left">HEALTHCARE</h5>
             </div>
-            <div className="services-list-items" key="strategy">
-              <div className="image-wrapper">
-                <img
-                  className="services-vector"
-                  src={"./images/strategy.svg"}
-                />
+            <div className="services-list-items">
+              <div className="item-wrapper">
+                <div className="image-wrapper">
+                  <img
+                    className="services-vector"
+                    src={"./images/strategy.svg"}
+                  />
+                </div>
+                <h5 className="service-title">STRATEGY</h5>
               </div>
-              <h5 className="service-title">STRATEGY</h5>
             </div>
-            <div className="services-list-items" key="software">
-              <div className="image-wrapper">
-                <img
-                  className="services-vector"
-                  src={"./images/software.svg"}
-                />
+            <div className="services-list-right">
+              <div className="item-wrapper">
+                <div className="image-wrapper">
+                  <img
+                    className="services-vector"
+                    src={"./images/software.svg"}
+                  />
+                </div>
+                <h5 className="service-title">SOFTWARE</h5>
               </div>
-              <h5 className="service-title">SOFTWARE</h5>
             </div>
           </div>
         </div>
+        <div className="section section-2">
+          <div className="purple-small-title">
+            <h5>A FULL SERVICE AGENCY</h5>
+          </div>
+          <div className="section-content">
+            You need a partner that can deliver projects end-to-end? That's us.
+          <br></br>
+          <br></br>
+          We can cover every part of the process, saving you from dealing with too many vendors, and most importantly, delivering a polished project on time.</div>
+          </div>
+        <div className="section purple-section">
+        <div className="purple-section-content">
+          Coding samples.<br></br>
+          Curriculum building.<br></br>
+          Medical imaging.<br></br>
+          Everything data.
+          <div className="line-bottom" />
+          </div>
+          </div>
         {/* </Container> */}
       </Layout>
     );
