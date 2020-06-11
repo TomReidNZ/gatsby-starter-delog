@@ -20,16 +20,20 @@ body::-webkit-scrollbar {
   display:flex;
 }
 h1 {
-  font-size: 18px !important;
+  font-size: calc(18px + (92 - 18) * ((100vw - 375px) / (1920 - 375)));
+
   text-align: left;
   color: white;
   font-weight: 500;
   padding-top: calc((50vh - 43px - 42px) / 3);
 }
 .section-logo {
-  padding-top: calc((50vh - 43px - 42px) / 3);
-  width: 160px;
-  min-width: 150px;
+  // padding-top: calc((50vh - 43px - 42px) / 3);
+  // width: 160px;
+  margin-top: calc((50vh - 43px - 42px) / 3);
+
+  width: calc(98px + (493 - 98) * ((100vw - 375px) / (1920 - 375)));
+
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -40,11 +44,15 @@ h1 {
   color: #100540;
 }
 h5 {
-    font-size: calc(9px + (18 - 9) * ((100vw - 375px) / (1920 - 375)));
+    // font-size: calc(9px + (18 - 9) * ((100vw - 375px) / (1920 - 375)));
+    font-size: calc(9px + (34 - 9) * ((100vw - 375px) / (1920 - 375)));
+
     font-weight: 600;
 }
 .section-content {
-  font-size: 11px;
+  // font-size: 11px;
+  font-size: calc(11px + (56 - 11) * ((100vw - 375px) / (1920 - 375)));
+
   color: #100540;
 }
 .title-wrapper {
@@ -151,4 +159,20 @@ h5 {
     left: 36.8vw;
     width: calc(237px + (738 + 237) * ((100vw - 375px) / (1920 - 375)));
     display:flex;
+}
+
+@media only screen and (min-width: 992px) {
+  .section {
+    height: 100vh;
+    padding: 0 14.6667vw 0 18.68vw;
+  }
+  .section-logo {
+
+    // margin-top: 117px;
+    margin-top:6.389vh;
+    margin-bottom:22.222vh
+  }
+  h1 {
+    padding-top:0;
+  }
 }
