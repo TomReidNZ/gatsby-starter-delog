@@ -33,6 +33,7 @@ class Index extends React.Component {
           </div>
         </div>
         <div className="section section-2">
+          <div className="content-wrapper">
           <div className="purple-small-title">
             <h5>BLEEDING-EDGE EXPERTISE</h5>
           </div>
@@ -41,8 +42,12 @@ class Index extends React.Component {
             understands what you're working on, and who can translate that
             knowledge for any audience - from the C-suite down.
           </div>
+          </div>
+          <div className="image-section-wrapper">
+            <img className="section-2-image" src={"./images/section-2-image.jpg"}/>
+          </div>
         </div>
-        <div className="section purple-section">
+        <div className="section purple-section section-3">
           <div className="title-wrapper">
             <h5 className="white-small-title">BEST - IN - CLASS SERVICES</h5>
             <div className="line" />
