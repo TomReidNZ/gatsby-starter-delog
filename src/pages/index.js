@@ -117,18 +117,18 @@ class Index extends React.Component {
           </div>
           <div className="section-content">
             You need a partner that can deliver projects end-to-end? That's us.
-          </div>
           <br></br>
-          <div className="section-content">We can cover every part of the process, saving you from dealing with too many vendors, and most importantly, delivering a polished project on time.</div>
-        </div>
+          <br></br>
+          We can cover every part of the process, saving you from dealing with too many vendors, and most importantly, delivering a polished project on time.</div>
+          </div>
         <div className="section purple-section">
         <div className="purple-section-content">
           Coding samples.<br></br>
           Curriculum building.<br></br>
           Medical imaging.<br></br>
           Everything data.
+          <div className="line-bottom" />
           </div>
-            <div className="line-bottom" />
           </div>
         {/* </Container> */}
       </Layout>

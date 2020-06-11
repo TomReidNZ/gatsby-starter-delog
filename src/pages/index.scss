@@ -8,18 +8,19 @@ body::-webkit-scrollbar {
 .section {
   height: 50vh;
   padding: 0 14.6667vw 0 20vw;
+  display:flex;
+  flex-direction: column;
 }
 .purple-section {
   background-color: #100540;
 }
 .title-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 250px;
+  // margin-left: auto;
+  // margin-right: auto;
+  display:flex;
 }
 h1 {
-  font-size: 18px;
-  width: auto;
+  font-size: 18px !important;
   text-align: left;
   color: white;
   font-weight: 500;
@@ -43,7 +44,7 @@ h5 {
     font-weight: 600;
 }
 .section-content {
-  font-size: 13px;
+  font-size: 11px;
   color: #100540;
 }
 .title-wrapper {
@@ -141,10 +142,13 @@ h5 {
     padding-top:19.19vh;
     color:white;
     padding-left:16.8vw;
+    display:flex;
+    flex-direction: column-reverse;
 }
 .line-bottom{
     border: solid 0.5px white;
     position: absolute;
     left: 36.8vw;
     width: calc(237px + (738 + 237) * ((100vw - 375px) / (1920 - 375)));
+    display:flex;
 }
