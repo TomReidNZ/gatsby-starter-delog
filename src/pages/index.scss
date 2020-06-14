@@ -5,8 +5,8 @@ body::-webkit-scrollbar {
 // Mobile CSS from 375 to 767px
 .section {
   height: 50vh;
-  min-height:calc(333.5px + (454.5 - 333.5) * ((100vw - 375px) / (767 - 375)));
-  max-height:calc(333.5px + (1200 - 333.5) * ((100vw - 375px) / (767 - 375)));
+  min-height: calc(333.5px + (454.5 - 333.5) * ((100vw - 375px) / (767 - 375)));
+  max-height: calc(333.5px + (1200 - 333.5) * ((100vw - 375px) / (767 - 375)));
   width: 100%;
   min-width: 375px;
   display: grid;
@@ -28,7 +28,6 @@ body::-webkit-scrollbar {
   // width: calc(98px + (493 - 98) * ((100vw - 375px) / (1920 - 375)));
 }
 .title-container {
-
 }
 h1 {
   font-size: calc(18.19px + (37.3 - 18.19) * ((100vw - 375px) / (767 - 375)));
@@ -40,14 +39,15 @@ h1 {
   grid-row: 4;
 }
 .section-2 {
-  grid-template-rows: minmax(0, 31.484%) auto minmax(0, 11.094%) auto minmax(0, 37.418%);
-
+  grid-template-rows: minmax(0, 31.484%) auto minmax(0, 11.094%) auto minmax(
+      0,
+      37.418%
+    );
 }
 h5 {
   font-size: calc(9px + (19.5 - 9) * ((100vw - 375px) / (767 - 375)));
   font-weight: 600;
-  margin-bottom:0;
-
+  margin-bottom: 0;
 }
 .section-2 .purple-small-title {
   color: #100540;
@@ -62,12 +62,15 @@ h5 {
   font-size: calc(11px + (23 - 11) * ((100vw - 375px) / (767 - 375)));
 }
 .image-section-center {
-  display:none;
+  display: none;
 }
 // Section 3 start
-.section-3{
+.section-3 {
   grid-template-columns: 20% auto 14.6667%;
-  grid-template-rows: minmax(0, 16.566%) fit-content(5.72%) minmax(0, 11.44%) auto minmax(0, 25%);
+  grid-template-rows: minmax(0, 16.566%) fit-content(5.72%) minmax(0, 11.44%) auto minmax(
+      0,
+      25%
+    );
 }
 .title-wrapper {
   // padding-top: 8.4vh;
@@ -129,14 +132,14 @@ h5 {
   font-size: calc(9px + (15.67 - 9) * ((100vw - 375px) / (767 - 375)));
   font-weight: 400;
   text-align: center;
-  margin-top:calc(7px + (34 - 7) * ((100vw - 375px) / (1920 - 375)));
+  margin-top: calc(7px + (34 - 7) * ((100vw - 375px) / (1920 - 375)));
 }
 .item-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: calc(100% / 3);
-  height:13.5vh;
+  height: 13.5vh;
 }
 // .item-wrapper:nth-child(4), .item-wrapper:nth-child(5), .item-wrapper:nth-child(6){
 //   margin-top:auto;
@@ -149,23 +152,66 @@ h5 {
   align-items: flex-end;
 }
 .item-wrapper:first-child .service-title {
-  position:relative;
-  left:calc(-1 * ((50px + (85.218 - 50) * ((100vw - 375px) / (766 - 375))) - (35px + (125 - 35) * ((100vw - 375px) / (1920 - 375))))/2);
+  position: relative;
+  left: calc(
+    -1 * (
+        (50px + (85.218 - 50) * ((100vw - 375px) / (766 - 375))) -
+          (35px + (125 - 35) * ((100vw - 375px) / (1920 - 375)))
+      ) / 2
+  );
 }
 .item-wrapper:nth-child(4) .service-title {
-  position:relative;
-  left:calc(-1 * ((63.344px + (107.953 - 63.344) * ((100vw - 375px) / (766 - 375))) - (35px + (125 - 35) * ((100vw - 375px) / (1920 - 375))))/2);
+  position: relative;
+  left: calc(
+    -1 * (
+        (63.344px + (107.953 - 63.344) * ((100vw - 375px) / (766 - 375))) -
+          (35px + (125 - 35) * ((100vw - 375px) / (1920 - 375)))
+      ) / 2
+  );
 }
 .item-wrapper:nth-child(3) .service-title {
-  position:relative;
-  left:calc((78.578px + (133.922 - 78.578) * ((100vw - 375px) / (766 - 375)) - (35px + (125 - 35) * ((100vw - 375px) / (1920 - 375))))/2);
+  position: relative;
+  left: calc(
+    (
+        78.578px + (133.922 - 78.578) * ((100vw - 375px) / (766 - 375)) -
+          (35px + (125 - 35) * ((100vw - 375px) / (1920 - 375)))
+      ) / 2
+  );
 }
 .item-wrapper:nth-child(6) .service-title {
-  position:relative;
-  left:calc((53.672px + (91.469 - 53.672) * ((100vw - 375px) / (766 - 375)) - (35px + (125 - 35) * ((100vw - 375px) / (1920 - 375))))/2);
+  position: relative;
+  left: calc(
+    (
+        53.672px + (91.469 - 53.672) * ((100vw - 375px) / (766 - 375)) -
+          (35px + (125 - 35) * ((100vw - 375px) / (1920 - 375)))
+      ) / 2
+  );
 }
 
 // section 3 finish
+.lady-image-wrapper {
+  display: none;
+}
+
+.section-4 .purple-small-title {
+  color: #100540;
+  grid-column: 2;
+  grid-row: 2;
+}
+.section-4 .section-content {
+  color: #100540;
+  grid-column: 2;
+  grid-row: 4;
+  color: #100540;
+  font-size: calc(11px + (23 - 11) * ((100vw - 375px) / (767 - 375)));
+  line-height: calc(13.29px + (30 - 13.29) * ((100vw - 375px) / (767 - 375)));
+}
+.section-4 {
+  grid-template-rows: minmax(0, 28.186%) auto minmax(0, 12%) auto minmax(
+      0,
+      30.585%
+    );
+}
 
 .dev {
   display: none;

@@ -109,15 +109,12 @@ class Index extends React.Component {
             </div>
           </div>
         </div>
-        <div className="dev">
           <div className="section section-4">
             <div className="lady-image-wrapper">
               <img className="lady-image" src={"./images/lady.jpg"} />
             </div>
-            <div className="purple-container">
-              <div className="purple-small-title">
-                <h5>A FULL SERVICE AGENCY</h5>
-              </div>
+            {/* <div className="purple-container"> */}
+                <h5 className="purple-small-title">A FULL SERVICE AGENCY</h5>
               <div className="section-content">
                 You need a partner that can deliver projects end-to-end? That's
                 us.
@@ -128,7 +125,7 @@ class Index extends React.Component {
                 polished project on time.
               </div>
             </div>
-          </div>
+          {/* </div> */}
           <div className="section purple-section section-5">
             <div className="purple-section-content">
               Coding samples.<br></br>
@@ -138,7 +135,6 @@ class Index extends React.Component {
               <div className="line-bottom" />
             </div>
           </div>
-        </div>
         {/* </Container> */}
       </Layout>
     );
