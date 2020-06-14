@@ -61,7 +61,7 @@ class Index extends React.Component {
             <div className="item-wrapper">
               <div className="image-wrapper">
                 <img
-                  className="services-vector"
+                  className="services-vector v23"
                   src={"./images/ai_and_ml.svg"}
                 />
               </div>
@@ -72,18 +72,18 @@ class Index extends React.Component {
             <div className="item-wrapper">
               <div className="image-wrapper">
                 <img
-                  className="services-vector"
+                  className="services-vector v21"
                   src={"./images/online_education.svg"}
                 />
               </div>
-              <div className="service-title">
+              <div className="service-title online-h5">
                 <h5>ONLINE EDUCATION</h5>
               </div>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
                 <img
-                  className="services-vector"
+                  className="services-vector v23"
                   src={"./images/responsible_ai.svg"}
                 />
               </div>
@@ -93,7 +93,7 @@ class Index extends React.Component {
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
-                <img className="services-vector" src={"./images/b.svg"} />
+                <img className="services-vector v22" src={"./images/b.svg"} />
               </div>
               <div className="service-title">
                 <h5>HEALTHCARE</h5>
@@ -102,7 +102,7 @@ class Index extends React.Component {
             <div className="item-wrapper">
               <div className="image-wrapper">
                 <img
-                  className="services-vector"
+                  className="services-vector v20"
                   src={"./images/strategy.svg"}
                 />
               </div>
@@ -113,7 +113,7 @@ class Index extends React.Component {
             <div className="item-wrapper">
               <div className="image-wrapper">
                 <img
-                  className="services-vector"
+                  className="services-vector v23"
                   src={"./images/software.svg"}
                 />
               </div>
