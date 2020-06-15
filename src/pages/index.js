@@ -31,22 +31,22 @@ class Index extends React.Component {
           <h1>Making better technology, together.</h1>
         </div>
         <div className="section section-2">
-          {/* <div className="content-wrapper">
-              <div className="purple-small-title"> */}
-          <h5 className="purple-small-title">BLEEDING-EDGE EXPERTISE</h5>
-          {/* </div> */}
-          <div className="section-content">
-            You need a partner that's with you on the cutting edge, who
-            understands what you're working on, and who can translate that
-            knowledge for any audience - from the C-suite down.
+          <div className="content-wrapper">
+            <h5 className="purple-small-title">BLEEDING-EDGE EXPERTISE</h5>
+            <div className="section-content">
+              You need a partner that's with you on the cutting edge, who
+              understands what you're working on, and who can translate that
+              knowledge for any audience - from the C-suite down.
+            </div>
           </div>
-          {/* </div> */}
           <div className="image-section-center">
             <div className="image-section-wrapper">
-              <img
-                className="section-2-image"
-                src={"./images/section-2-image.png"}
-              />
+              <div className="image-2-wrapper">
+                <img
+                  className="section-2-image"
+                  src={"./images/section-2-image.png"}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ class Index extends React.Component {
                   src={"./images/ai_and_ml.svg"}
                 />
               </div>
-                <h5 className="service-title">AI AND ML</h5>
+              <h5 className="service-title">AI AND ML</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
@@ -72,7 +72,7 @@ class Index extends React.Component {
                   src={"./images/online_education.svg"}
                 />
               </div>
-                <h5 className="service-title online-h5">ONLINE EDUCATION</h5>
+              <h5 className="service-title online-h5">ONLINE EDUCATION</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
@@ -81,13 +81,13 @@ class Index extends React.Component {
                   src={"./images/responsible_ai.svg"}
                 />
               </div>
-                <h5 className="service-title">RESPONSIBLE AI</h5>
+              <h5 className="service-title">RESPONSIBLE AI</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
                 <img className="services-vector v22" src={"./images/b.svg"} />
               </div>
-                <h5 className="service-title">HEALTHCARE</h5>
+              <h5 className="service-title">HEALTHCARE</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
@@ -96,7 +96,7 @@ class Index extends React.Component {
                   src={"./images/strategy.svg"}
                 />
               </div>
-                <h5 className="service-title">STRATEGY</h5>
+              <h5 className="service-title">STRATEGY</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
@@ -105,36 +105,40 @@ class Index extends React.Component {
                   src={"./images/software.svg"}
                 />
               </div>
-                <h5 className="service-title">SOFTWARE</h5>
+              <h5 className="service-title">SOFTWARE</h5>
             </div>
           </div>
         </div>
-          <div className="section section-4">
+        <div className="section section-4">
+          <div className="lady-image-grid">
             <div className="lady-image-wrapper">
               <img className="lady-image" src={"./images/lady.jpg"} />
             </div>
-            {/* <div className="purple-container"> */}
-                <h5 className="purple-small-title">A FULL SERVICE AGENCY</h5>
-              <div className="section-content">
-                You need a partner that can deliver projects end-to-end? That's
-                us.
-                <br></br>
-                <br></br>
-                We can cover every part of the process, saving you from dealing
-                with too many vendors, and most importantly, delivering a
-                polished project on time.
-              </div>
-            </div>
-          {/* </div> */}
-          <div className="section purple-section section-5">
-            <div className="purple-section-content">
-              Coding samples.<br></br>
-              Curriculum building.<br></br>
-              Medical imaging.<br></br>
-              Everything data.
-              <div className="line-bottom" />
+          </div>
+          {/* <div className="purple-container"> */}
+          <div className="content-wrapper">
+            <h5 className="purple-small-title">A FULL SERVICE AGENCY</h5>
+            <div className="section-content">
+              You need a partner that can deliver projects end-to-end? That's
+              us.
+              <br></br>
+              <br></br>
+              We can cover every part of the process, saving you from dealing
+              with too many vendors, and most importantly, delivering a polished
+              project on time.
             </div>
           </div>
+        </div>
+        {/* </div> */}
+        <div className="section purple-section section-5">
+          <div className="purple-section-content">
+            Coding samples.<br></br>
+            Curriculum building.<br></br>
+            Medical imaging.<br></br>
+            Everything data.
+            <div className="line-bottom" />
+          </div>
+        </div>
         {/* </Container> */}
       </Layout>
     );
