@@ -27,7 +27,7 @@ class Index extends React.Component {
         <SEO pageMeta={pageMeta} />
         {/* <Container className="main-page-body"> */}
         <div className="section purple-section">
-          <img className="section-logo" src={"./a.svg"} />
+          <img className="section-logo" src={"./a.svg"} alt="logo" />
           <h1>Making better technology, together.</h1>
         </div>
         <div className="section section-2">
@@ -45,6 +45,7 @@ class Index extends React.Component {
                 <img
                   className="section-2-image"
                   src={"./images/section-2-image.png"}
+                  alt="suit with a brain"
                 />
               </div>
             </div>
@@ -61,6 +62,7 @@ class Index extends React.Component {
                 <img
                   className="services-vector v23"
                   src={"./images/ai_and_ml.svg"}
+                  alt="brain"
                 />
               </div>
               <h5 className="service-title">AI AND ML</h5>
@@ -70,6 +72,7 @@ class Index extends React.Component {
                 <img
                   className="services-vector v21"
                   src={"./images/online_education.svg"}
+                  alt="computer screen with graduation hat"
                 />
               </div>
               <h5 className="service-title online-h5">ONLINE EDUCATION</h5>
@@ -79,13 +82,18 @@ class Index extends React.Component {
                 <img
                   className="services-vector v23"
                   src={"./images/responsible_ai.svg"}
+                  alt="hands shaking"
                 />
               </div>
               <h5 className="service-title">RESPONSIBLE AI</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
-                <img className="services-vector v22" src={"./images/b.svg"} />
+                <img
+                  className="services-vector v22"
+                  src={"./images/b.svg"}
+                  alt="phone with medical gear"
+                />
               </div>
               <h5 className="service-title">HEALTHCARE</h5>
             </div>
@@ -94,6 +102,7 @@ class Index extends React.Component {
                 <img
                   className="services-vector v20"
                   src={"./images/strategy.svg"}
+                  alt="clipboard"
                 />
               </div>
               <h5 className="service-title">STRATEGY</h5>
@@ -103,6 +112,7 @@ class Index extends React.Component {
                 <img
                   className="services-vector v23"
                   src={"./images/software.svg"}
+                  alt="brackets"
                 />
               </div>
               <h5 className="service-title">SOFTWARE</h5>
@@ -112,7 +122,11 @@ class Index extends React.Component {
         <div className="section section-4">
           <div className="lady-image-grid">
             <div className="lady-image-wrapper">
-              <img className="lady-image" src={"./images/lady.jpg"} />
+              <img
+                className="lady-image"
+                src={"./images/lady.jpg"}
+                alt="lady with tablet"
+              />
             </div>
           </div>
           {/* <div className="purple-container"> */}
@@ -137,6 +151,50 @@ class Index extends React.Component {
             Medical imaging.<br></br>
             Everything data.
             <div className="line-bottom" />
+          </div>
+        </div>
+        <div className="section section-6">
+          <div className="form-wrapper">
+            <h5 className="form-title">WE CAN'T WAIT TO WORK WITH YOU</h5>
+            <div className="section-content">Contact us</div>
+            <form
+              className="form-container"
+              action="https://sendmail.w3layouts.com/SubmitContactForm"
+              method="post"
+            >
+              <div className="form-input f-name">
+                <label htmlFor="w3lName">Name:</label>
+                <input type="text" name="w3lName" id="w3lName" />
+              </div>
+              <div className="form-input f-email">
+                <label htmlFor="w3lSender">Email:</label>
+                <input type="email" name="w3lSender" id="w3lSender" />
+              </div>
+              <div className="form-input-hide">
+                <label htmlFor="w3lSubject">Subject</label>
+                <input
+                  type="text"
+                  name="w3lSubject"
+                  id="w3lSubject"
+                  value="contact-form"
+                />
+              </div>
+              <div className="form-input f-message">
+                <label htmlFor="w3lMessage">Message:</label>
+                <textarea name="w3lMessage" id="w3lMessage"></textarea>
+              </div>
+              <div
+                className="f-button"
+                style={{ display: "grid", justifyContent: "end" }}
+              >
+                <input
+                  type="submit"
+                  className="button -primary"
+                  style={{ marginRight: 0 }}
+                  value="SEND"
+                />
+              </div>
+            </form>
           </div>
         </div>
         {/* </Container> */}
