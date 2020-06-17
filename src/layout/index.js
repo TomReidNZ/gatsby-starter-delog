@@ -6,8 +6,6 @@ import config from "../../data/SiteConfig";
 
 import "../styles/bootstrap.scss";
 
-import Header from "./Header";
-import Footer from "./Footer";
 
 export default class MainLayout extends React.Component {
   render() {

@@ -1,8 +1,7 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../layout";
 import SEO from "../components/SEO";
-import { getArticlesFromPostEdges } from "../utility/articles";
 
 import "./index.scss";
 
@@ -14,18 +13,17 @@ class Index extends React.Component {
       cover: "https://spaceholder.cc/400x300",
       path: "/",
     };
-    const {
-      data: {
-        site: {
-          siteMetadata: { topics },
-        },
-        allMarkdownRemark: { edges: postEdges },
-      },
-    } = this.props;
+    // const {
+    //   data: {
+    //     site: {
+    //       siteMetadata: {  },
+    //     },
+    //     allMarkdownRemark: {  },
+    //   },
+    // } = this.props;
     return (
       <Layout>
         <SEO pageMeta={pageMeta} />
-        {/* <Container className="main-page-body"> */}
         <div className="section purple-section">
           <img className="section-logo" src={"./a.svg"} alt="logo" />
           <h1>Making better technology, together.</h1>
@@ -129,7 +127,6 @@ class Index extends React.Component {
               />
             </div>
           </div>
-          {/* <div className="purple-container"> */}
           <div className="content-wrapper">
             <div className="content-grid">
               <h5 className="purple-small-title">A FULL SERVICE AGENCY</h5>
@@ -145,7 +142,6 @@ class Index extends React.Component {
             </div>
           </div>
         </div>
-        {/* </div> */}
         <div className="section purple-section section-5">
           <div className="purple-section-content">
             Coding samples.<br></br>
@@ -179,6 +175,7 @@ class Index extends React.Component {
                   name="w3lSubject"
                   id="w3lSubject"
                   value="contact-form"
+                  readOnly
                 />
               </div>
               <div className="form-input f-message">
