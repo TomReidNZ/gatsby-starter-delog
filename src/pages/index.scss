@@ -5,6 +5,9 @@ body::-webkit-scrollbar {
 //   -webkit-text-size-adjust: auto;
 // }
 // Mobile CSS from 375 to 767px
+// p {
+//   margin-bottom:0;
+// }
 .section {
   height: 50vh;
   min-height: calc(333.5px + (454.5 - 333.5) * ((100vw - 375px) / (767 - 375)));
@@ -208,16 +211,39 @@ h5 {
   color: #100540;
   grid-column: 1;
   grid-row: 2;
+  // padding-bottom:3.9em;
+  padding-bottom:2em;
+
 }
 .section-4 {
   grid-template-rows: auto;
 }
 .section-4 .content-wrapper {
-  grid-template-rows: minmax(0, 28.186%) auto minmax(0, 12%) auto minmax(
-      0,
-      30.585%
-    );
+  // grid-template-rows: minmax(0, 28.186%) auto minmax(0, 12%) auto minmax(
+  //     0,
+  //     30.585%
+  //   );
   grid-template-columns: auto;
+  grid-template-rows: 1fr auto 1.2fr;
+
+}
+.section-4 .content-grid {
+  // grid-template-rows: minmax(0, 28.186%) auto minmax(0, 12%) auto auto minmax(
+  //     0,
+  //     30.585%
+  //   );
+  display: grid;
+  grid-row:2;
+  grid-template-rows: 1fr auto auto auto 1fr;
+  // justify-content:center;
+}
+.section-4 .section-content {
+  grid-row: 4;
+  margin-bottom:0;
+}
+.section-4 .c1 {
+  grid-row: 3;
+  padding-bottom:1.2em;
 }
 .section-5 {
   grid-template-rows: minmax(0, 50%) auto minmax(0, 50%); //height
@@ -377,7 +403,6 @@ h5 {
       );
   }
 
-
   //Section 3 begins...
   .section-3 {
     background-color: white;
@@ -412,20 +437,20 @@ h5 {
     //     0,
     //     21.296%
     //   );
-      grid-template-rows: 1.18fr auto 1fr;
+    grid-template-rows: 1.18fr auto 1fr;
   }
   .section-4 .content-grid {
     grid-column: 2;
-    grid-row:2;
+    grid-row: 2;
   }
   .section-4 .purple-small-title {
     color: white;
     font-size: calc(13.6px + (34 - 13.6) * ((100vw - 768px) / (1920 - 768)));
-    padding-bottom:1.55em;
+    padding-bottom: 1.55em;
     // font-size:34px;
   }
   .section-4 .c1 {
-    padding-bottom:0.92em;
+    padding-bottom: 0.92em;
   }
 
   .section-4 .section-content {
@@ -498,20 +523,22 @@ h5 {
   .section-6 .section-content {
     font-size: calc(19px + (51 - 19) * ((100vw - 768px) / (1920 - 768)));
   }
-  .section-6 .form-title{
-    margin-bottom:0.8em
+  .section-6 .form-title {
+    margin-bottom: 0.8em;
   }
-  .section-6 .section-content{
-    margin-bottom:0.27em
+  .section-6 .section-content {
+    margin-bottom: 0.27em;
   }
-  .f-name label, .f-email label, .f-message label{
-    margin-bottom:0.75em;
+  .f-name label,
+  .f-email label,
+  .f-message label {
+    margin-bottom: 0.75em;
   }
-  .f-message textarea{
-height:5em
+  .f-message textarea {
+    height: 5em;
   }
-  .f-message{
-    margin-bottom:1em;
+  .f-message {
+    margin-bottom: 1em;
   }
 }
 @media only screen and (min-width: 1024px) and (max-height: 834px) {
