@@ -1,6 +1,7 @@
 body::-webkit-scrollbar {
   display: none;
 }
+
 // body {
 //   -webkit-text-size-adjust: auto;
 // }
@@ -318,7 +319,11 @@ h5 {
   height: 1.4em;
   width: 100%;
   font-size: calc(9px + (19.5 - 9) * ((100vw - 375px) / (767 - 375)));
-  border: 1px black solid;
+  // border: 1px black solid;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195));
+
 }
 .f-message textarea {
   border-radius: 0;
@@ -550,6 +555,8 @@ h5 {
 @media only screen and (min-width: 1200px) {
   .section {
     height: 100vh;
+    min-height: 50vw;
+    max-height:70vw;
   }
   .section-4 .purple-small-title,
   .section-2 .purple-small-title {
