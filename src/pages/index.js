@@ -119,13 +119,15 @@ class Index extends React.Component {
         </div>
         <div className="section section-4">
           <div className="lady-image-grid">
-            <div className="lady-image-wrapper">
-              <img
-                className="lady-image"
-                src={"./images/lady.jpg"}
-                alt="lady with tablet"
-              />
-            </div>
+            {/* <div className="lady-section-wrapper"> */}
+              <div className="lady-image-wrapper">
+                <img
+                  className="lady-image"
+                  src={"./images/lady.jpg"}
+                  alt="lady with tablet"
+                />
+              </div>
+            {/* </div> */}
           </div>
           <div className="content-wrapper">
             <div className="content-grid">
