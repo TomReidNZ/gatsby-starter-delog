@@ -1,3 +1,9 @@
+html {
+  height:100%;
+  width:100%;
+  // overflow: auto;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -481,8 +487,8 @@ h5 {
   }
   .line-bottom {
     border: solid 1px #100540;
-    width: calc(483px + (1204 - 483) * ((100vw - 768px) / (1920 - 768)));
-    left: 37.2vw;
+    width: calc(483px + (1210 - 487) * ((100vw - 768px) / (1920 - 768)));
+    left: 37vw;
     position: absolute;
   }
   .form-input label,
@@ -555,7 +561,7 @@ h5 {
   }
   .line-bottom {
     border: solid 2px #100540;
-    left: 37.25vw;
+    left: 37.2vw;
   }
   .section-3 .line {
     border: 2px solid #100540;

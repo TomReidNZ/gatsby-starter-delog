@@ -42,7 +42,7 @@ class Index extends React.Component {
               <div className="image-2-wrapper">
                 <img
                   className="section-2-image"
-                  src={"./images/section-2-image.png"}
+                  src={"./images/section-2-image.jpg"}
                   alt="suit with a brain"
                 />
               </div>
