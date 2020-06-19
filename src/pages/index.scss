@@ -1,14 +1,6 @@
 body::-webkit-scrollbar {
   display: none;
 }
-
-// body {
-//   -webkit-text-size-adjust: auto;
-// }
-// Mobile CSS from 375 to 767px
-// p {
-//   margin-bottom:0;
-// }
 .section {
   height: 50vh;
   min-height: calc(333.5px + (454.5 - 333.5) * ((100vw - 375px) / (767 - 375)));
@@ -32,7 +24,6 @@ body::-webkit-scrollbar {
 
 h1 {
   font-size: calc(18.19px + (37.3 - 18.19) * ((100vw - 375px) / (767 - 375)));
-  // font-size:37.3px;
   text-align: left;
   color: white;
   font-weight: 500;
@@ -460,16 +451,13 @@ h5 {
 
   .section-4 .section-content {
     color: white;
-    // grid-column: 2;
-    // font-size:21px;
     font-size: calc(21px + (55 - 21) * ((100vw - 768px) / (1920 - 768)));
-    // line-height:66px;
     line-height: calc(26.4px + (66 - 26.4) * ((100vw - 768px) / (1920 - 768)));
   }
   .lady-image-grid {
     display: grid;
     grid-column: 1;
-    grid-template-rows: 12.963% auto 8.3333%; //height
+    grid-template-rows: 12.963% 78.037% 8.3333%;
     grid-template-columns: 114.37%;
   }
   .lady-image-wrapper {
@@ -478,8 +466,6 @@ h5 {
     grid-column: 1;
   }
   .lady-image {
-    // height: 133.43%;
-    // width: 114.42%;
     height: 100%;
     width: 100%;
     position: relative;
