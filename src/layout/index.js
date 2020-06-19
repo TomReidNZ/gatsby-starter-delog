@@ -11,7 +11,6 @@ export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <>
         <div className="main">
           <Helmet>
             <meta name="description" content={config.siteDescription} />
@@ -23,7 +22,6 @@ export default class MainLayout extends React.Component {
           </Helmet>
           <main>{children}</main>
         </div>
-      </>
     );
   }
 }
