@@ -564,11 +564,11 @@ h5 {
   .section-2 .purple-small-title {
     font-size: calc(25px + (34 - 25) * ((100vw - 1200px) / (1920 - 1200)));
   }
-  .section-4 .section-content,
+  /* .section-4 .section-content,
   .section-2 .section-content {
     font-size: calc(40px + (54 - 40) * ((100vw - 1200px) / (1920 - 1200)));
     line-height: calc(48px + (65 - 48) * ((100vw - 1200px) / (1920 - 1200)));
-  }
+  } */
   .line-bottom {
     border: solid 2px #100540;
     left: 37.2vw;
