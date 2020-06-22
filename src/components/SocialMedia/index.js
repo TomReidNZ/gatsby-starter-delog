@@ -1,5 +1,4 @@
 import React from "react";
-import "./SocialMedia.scss";
 
 const SocialMedia = ({ userLinks }) => (
   <div className="SEO-Container">

@@ -1,26 +1,26 @@
 import React from "react";
 import { graphql } from "gatsby";
+
 import Layout from "../layout";
 import SEO from "../components/SEO";
-
-import "./index.scss";
+import "../layout/layout.css"
 
 class Index extends React.Component {
   render() {
     const pageMeta = {
       title: "AI Engineering Limited",
-      description: "A full-service technology agency",
+      description: "A full service technology agency",
       cover: "https://spaceholder.cc/400x300",
-      path: "/",
+      path: "/"
     };
-    // const {
-    //   data: {
-    //     site: {
-    //       siteMetadata: {  },
-    //     },
-    //     allMarkdownRemark: {  },
-    //   },
-    // } = this.props;
+    const {
+      data: {
+        site: {
+          siteMetadata: { topics }
+        },
+        allMarkdownRemark: { edges: postEdges }
+      }
+    } = this.props;
     return (
       <Layout>
         <SEO pageMeta={pageMeta} />
@@ -63,7 +63,7 @@ class Index extends React.Component {
                   alt="brain"
                 />
               </div>
-              <h5 className="service-title">AI AND ML</h5>
+              <h5 className="service-title first-v">AI AND ML</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
@@ -83,7 +83,7 @@ class Index extends React.Component {
                   alt="hands shaking"
                 />
               </div>
-              <h5 className="service-title">RESPONSIBLE AI</h5>
+              <h5 className="service-title third-v">RESPONSIBLE AI</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
@@ -93,7 +93,7 @@ class Index extends React.Component {
                   alt="phone with medical gear"
                 />
               </div>
-              <h5 className="service-title">HEALTHCARE</h5>
+              <h5 className="service-title forth-v">HEALTHCARE</h5>
             </div>
             <div className="item-wrapper">
               <div className="image-wrapper">
@@ -119,15 +119,13 @@ class Index extends React.Component {
         </div>
         <div className="section section-4">
           <div className="lady-image-grid">
-            {/* <div className="lady-section-wrapper"> */}
-              <div className="lady-image-wrapper">
-                <img
-                  className="lady-image"
-                  src={"./images/lady.jpg"}
-                  alt="lady with tablet"
-                />
-              </div>
-            {/* </div> */}
+            <div className="lady-image-wrapper">
+              <img
+                className="lady-image"
+                src={"./images/lady.jpg"}
+                alt="lady with tablet"
+              />
+            </div>
           </div>
           <div className="content-wrapper">
             <div className="content-grid">
@@ -198,7 +196,6 @@ class Index extends React.Component {
             </form>
           </div>
         </div>
-        {/* </Container> */}
       </Layout>
     );
   }

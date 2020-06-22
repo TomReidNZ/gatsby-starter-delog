@@ -4,9 +4,9 @@ const config = {
   siteTitleAlt: "AI Engineering Ltd", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
   siteUrl: "https://aiengineeringltd.com", // Domain of your website without pathPrefix.
-  siteGithub: "https://github.com/tomreidnz/toms-gatsby-blog",
+  siteGithub: "https://github.com/tomreidnz/ai-eng-site",
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "AI specialists", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "A full service technology agency", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
   googleAnalyticsID: "UA-141660058-1", // GA tracking ID.
@@ -20,7 +20,7 @@ const config = {
   userLocation: "Wellington, New Zealand", // User location to display in the author segment.
   userAvatar: "https://spaceholder.cc/200x100", // User avatar to display in the author segment.
   userDescription:
-    "Nibh nisl condimentum id venenatis a condimentum. At erat pellentesque adipiscing commodo elit. In ante metus dictum at tempor commodo ullamcorper a. Suspendisse sed nisi lacus sed. Eget dolor morbi non arcu risus quis varius quam quisque. Suspendisse ultrices gravida dictum fusce.", // User description to display in the author segment.
+    ".", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
@@ -45,7 +45,7 @@ const config = {
     },
     {
       label: "Email",
-      url: "mailto:tom@aiengineeringltd.com",
+      url: "mailto:tom@tomreid.ai",
       iconClassName: "fa fa-envelope",
       image: "email"
     }

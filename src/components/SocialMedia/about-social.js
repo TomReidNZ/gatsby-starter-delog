@@ -1,5 +1,4 @@
 import React from "react";
-import "./SocialMedia.scss";
 
 const SocialMediaAbout = () => (
   <div className="SocialMediaAbout-main">
@@ -32,12 +31,12 @@ const SocialMediaAbout = () => (
         </div>
       </li>
       <li className="about-list-items" key="email">
-        <a className="footer-button email" href={"mailto:tom@aiengineeringltd.com"}>
+        <a className="footer-button email" href={"mailto:tom@tomreid.ai"}>
           <div className="email social-button"/>
         </a>
         <div className="about-list-text">
         <h4>Email</h4>
-        <a className="about-list-link" href={"mailto:tom@aiengineeringltd.com"}>tom@aiengineeringltd.com</a>
+        <a className="about-list-link" href={"mailto:tom@tomreid.ai"}>tom@tomreid.ai</a>
         </div>
       </li>
   </ul>
