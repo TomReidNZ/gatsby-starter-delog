@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import Layout from "../layout";
 
 
@@ -8,11 +8,11 @@ class NotFound extends Component {
 
     return (
       <Layout>
-        <Container id="about-main">
+        <div id="about-main">
           <h4>
             Page not found :(
           </h4>
-        </Container>
+        </div>
       </Layout>
     );
   }
