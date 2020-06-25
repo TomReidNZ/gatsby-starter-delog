@@ -1,5 +1,4 @@
 import React from "react";
-import { graphql } from "gatsby";
 
 import Layout from "../layout";
 import SEO from "../components/SEO";
@@ -13,14 +12,6 @@ class Index extends React.Component {
       cover: "https://spaceholder.cc/400x300",
       path: "/"
     };
-    const {
-      data: {
-        site: {
-          siteMetadata: { topics }
-        },
-        allMarkdownRemark: { edges: postEdges }
-      }
-    } = this.props;
     return (
       <Layout>
         <SEO pageMeta={pageMeta} />
@@ -204,39 +195,39 @@ class Index extends React.Component {
 export default Index;
 
 /* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        topics {
-          title
-          slug
-          description
-          cover
-        }
-      }
-    }
-    allMarkdownRemark(
-      limit: 3
-      sort: { fields: [fields___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            date
-          }
-          excerpt(pruneLength: 580)
-          timeToRead
-          frontmatter {
-            title
-            tags
-            topics
-            cover
-            date
-          }
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query IndexQuery {
+//     site {
+//       siteMetadata {
+//         topics {
+//           title
+//           slug
+//           description
+//           cover
+//         }
+//       }
+//     }
+//     allMarkdownRemark(
+//       limit: 3
+//       sort: { fields: [fields___date], order: DESC }
+//     ) {
+//       edges {
+//         node {
+//           fields {
+//             slug
+//             date
+//           }
+//           excerpt(pruneLength: 580)
+//           timeToRead
+//           frontmatter {
+//             title
+//             tags
+//             topics
+//             cover
+//             date
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
