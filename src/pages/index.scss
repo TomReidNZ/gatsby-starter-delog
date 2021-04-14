@@ -271,6 +271,7 @@ h5 {
   position: absolute;
   left: 36.462vw;
   width: calc(237px + (738 + 237) * ((100vw - 375px) / (1920 - 375)));
+  margin-top : 15px;
 }
 .section-6 {
   grid-template-rows: 1fr auto 1fr;
